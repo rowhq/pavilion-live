@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavilion Live - The Ultimate Concert Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <h1><i class="fas fa-music"></i> Pavilion Live</h1>
+                <p>The Cynthia Woods Mitchell Pavilion Events</p>
+            </div>
+            <div class="header-actions">
+                <button class="settings-btn" id="settingsBtn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="stats-bar">
+        <div class="stat">
+            <i class="fas fa-calendar"></i>
+            <span id="totalEvents">0</span> Events
+        </div>
+        <div class="stat">
+            <i class="fas fa-ticket-alt"></i>
+            <span id="thisMonth">0</span> This Month
+        </div>
+        <div class="stat">
+            <i class="fas fa-fire"></i>
+            <span id="hotEvents">0</span> Trending
+        </div>
+        <div class="weather-widget" id="weatherWidget">
+            <i class="fas fa-cloud-sun"></i>
+            <span>Loading weather...</span>
+        </div>
+    </div>
+
+    <div class="filters-section">
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search artists, events, genres...">
+        </div>
+        
+        <div class="filter-controls">
+            <select id="monthFilter">
+                <option value="">All Months</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            
+            <select id="sortBy">
+                <option value="date">Sort by Date</option>
+                <option value="name">Sort by Name</option>
+                <option value="popularity">Sort by Popularity</option>
+            </select>
+            
+            <button class="filter-btn" id="filterToggle">
+                <i class="fas fa-filter"></i> More Filters
+            </button>
+        </div>
+    </div>
+
+    <div class="advanced-filters" id="advancedFilters">
+        <div class="filter-group">
+            <label>Genre</label>
+            <div class="genre-tags" id="genreTags"></div>
+        </div>
+        <div class="filter-group">
+            <label>Day of Week</label>
+            <div class="day-filters">
+                <button class="day-btn" data-day="0">Sun</button>
+                <button class="day-btn" data-day="1">Mon</button>
+                <button class="day-btn" data-day="2">Tue</button>
+                <button class="day-btn" data-day="3">Wed</button>
+                <button class="day-btn" data-day="4">Thu</button>
+                <button class="day-btn" data-day="5">Fri</button>
+                <button class="day-btn" data-day="6">Sat</button>
+            </div>
+        </div>
+    </div>
+
+    <main id="eventsContainer" class="events-grid">
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading amazing events...</p>
+        </div>
+    </main>
+
+    <!-- Music Player Modal -->
+    <div class="music-modal" id="musicModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalArtist"></h2>
+                <p id="modalEvent"></p>
+            </div>
+            <div class="player-container">
+                <div class="spotify-section">
+                    <h3><i class="fab fa-spotify"></i> Top Tracks</h3>
+                    <div id="spotifyPlayer"></div>
+                </div>
+                <div class="youtube-section">
+                    <h3><i class="fab fa-youtube"></i> Live Performances</h3>
+                    <div id="youtubePlayer"></div>
+                </div>
+            </div>
+            <div class="artist-info">
+                <div class="info-tabs">
+                    <button class="tab-btn active" data-tab="about">About</button>
+                    <button class="tab-btn" data-tab="similar">Similar Artists</button>
+                    <button class="tab-btn" data-tab="setlist">Possible Setlist</button>
+                </div>
+                <div class="tab-content" id="tabContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div class="event-modal" id="eventModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeEventModal">&times;</button>
+            <div class="event-details" id="eventDetails"></div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="settings-modal" id="settingsModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeSettingsModal">&times;</button>
+            <h2>Settings</h2>
+            <p class="settings-intro">Add API keys to enable enhanced features. The app works perfectly without them!</p>
+            
+            <div class="settings-section">
+                <h3><i class="fas fa-cloud-sun"></i> Weather API</h3>
+                <p>Get real-time weather data for outdoor events</p>
+                <input type="text" id="weatherApiKey" placeholder="OpenWeatherMap API Key">
+                <a href="https://openweathermap.org/api" target="_blank" class="help-link">Get API Key →</a>
+            </div>
+            
+            <div class="settings-section">
+                <h3><i class="fab fa-spotify"></i> Spotify API</h3>
+                <p>Enhanced music playback features</p>
+                <input type="text" id="spotifyClientId" placeholder="Spotify Client ID">
+                <a href="https://developer.spotify.com" target="_blank" class="help-link">Get Client ID →</a>
+            </div>
+            
+            <div class="settings-section">
+                <h3><i class="fab fa-youtube"></i> YouTube API</h3>
+                <p>Search and play live performance videos</p>
+                <input type="text" id="youtubeApiKey" placeholder="YouTube API Key">
+                <a href="https://console.cloud.google.com" target="_blank" class="help-link">Get API Key →</a>
+            </div>
+            
+            <button class="btn btn-primary" id="saveSettings">Save Settings</button>
+            <button class="btn btn-secondary" id="clearSettings">Clear All Keys</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

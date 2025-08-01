@@ -1,0 +1,162 @@
+[
+  {
+    "id": "3A006132D7DB5895",
+    "name": "\"Weird Al\" Yankovic: Bigger & Weirder 2025 Tour",
+    "date": "2025-08-01T20:00:00",
+    "artist": "\"Weird Al\" Yankovic",
+    "genre": "Comedy",
+    "url": "https://www.ticketmaster.com/event/3A006132D7DB5895"
+  },
+  {
+    "id": "3A0062AFB5E23EBB",
+    "name": "Falling In Reverse: God Is A Weapon Tour",
+    "date": "2025-08-14T18:15:00",
+    "artist": "Falling In Reverse",
+    "genre": "Rock",
+    "url": "https://www.ticketmaster.com/event/3A0062AFB5E23EBB"
+  },
+  {
+    "id": "3A006231E6515041",
+    "name": "Jason Aldean: Full Throttle Tour 2025",
+    "date": "2025-08-15T19:30:00",
+    "artist": "Jason Aldean",
+    "genre": "Country",
+    "url": "https://www.ticketmaster.com/event/3A006231E6515041"
+  },
+  {
+    "id": "3A006252AD863971",
+    "name": "Big Time Rush: In Real Life Worldwide",
+    "date": "2025-08-17T19:00:00",
+    "artist": "Big Time Rush",
+    "genre": "Pop",
+    "url": "https://www.ticketmaster.com/event/3A006252AD863971"
+  },
+  {
+    "id": "3A006259DC044577",
+    "name": "The Offspring: SUPERCHARGED Worldwide in '25",
+    "date": "2025-08-23T19:00:00",
+    "artist": "The Offspring",
+    "genre": "Rock",
+    "url": "https://www.ticketmaster.com/event/3A006259DC044577"
+  },
+  {
+    "id": "3A006185A749284B",
+    "name": "Nelly with Ja Rule & Special Guests: Where The Party At Tour",
+    "date": "2025-09-04T19:30:00",
+    "artist": "Nelly",
+    "genre": "Hip Hop",
+    "url": "https://www.ticketmaster.com/event/3A006185A749284B"
+  },
+  {
+    "id": "3A006288949A1BB2",
+    "name": "Parker McCollum Tour",
+    "date": "2025-09-06T19:30:00",
+    "artist": "Parker McCollum",
+    "genre": "Country",
+    "url": "https://www.ticketmaster.com/event/3A006288949A1BB2"
+  },
+  {
+    "id": "3A006247E9A46D3E",
+    "name": "KIDZ BOP LIVE Certified BOP Tour",
+    "date": "2025-09-07T16:00:00",
+    "artist": "KIDZ BOP",
+    "genre": "Family",
+    "url": "https://www.ticketmaster.com/event/3A006247E9A46D3E"
+  },
+  {
+    "id": "3A0062BF4F2C7363",
+    "name": "Lil Wayne: Tha Carter VI Tour",
+    "date": "2025-09-18T19:00:00",
+    "artist": "Lil Wayne",
+    "genre": "Hip Hop",
+    "url": "https://www.ticketmaster.com/event/3A0062BF4F2C7363"
+  },
+  {
+    "id": "3A00623EE55B71CD",
+    "name": "Lainey Wilson: Whirlwind World Tour",
+    "date": "2025-09-20T19:00:00",
+    "artist": "Lainey Wilson",
+    "genre": "Country",
+    "url": "https://www.ticketmaster.com/event/3A00623EE55B71CD"
+  },
+  {
+    "id": "3A006272D31F3C8E",
+    "name": "The Crooner & The Cowboy: Leon Bridges with Charley Crockett",
+    "date": "2025-09-21T19:00:00",
+    "artist": "Leon Bridges",
+    "genre": "Soul",
+    "url": "https://www.ticketmaster.com/event/3A006272D31F3C8E"
+  },
+  {
+    "id": "3A0062BF0DD073CA",
+    "name": "A Day To Remember & Yellowcard - Maximum Fun Tour",
+    "date": "2025-09-23T18:15:00",
+    "artist": "A Day To Remember",
+    "genre": "Rock",
+    "url": "https://www.ticketmaster.com/event/3A0062BF0DD073CA"
+  },
+  {
+    "id": "3A006286C24759E2",
+    "name": "Uncle Charlie's R & B Cookout",
+    "date": "2025-09-26T19:00:00",
+    "artist": "Charlie Wilson",
+    "genre": "R&B",
+    "url": "https://www.ticketmaster.com/event/3A006286C24759E2"
+  },
+  {
+    "id": "3A006296AB343E3F",
+    "name": "Whiskey Myers: WHAT WE WERE BORN TO DO TOUR",
+    "date": "2025-09-27T18:30:00",
+    "artist": "Whiskey Myers",
+    "genre": "Country",
+    "url": "https://www.ticketmaster.com/event/3A006296AB343E3F"
+  },
+  {
+    "id": "3A0062C64E1F6C2E",
+    "name": "The Thuggish-Ruggish-Mafia Tour",
+    "date": "2025-09-28T19:30:00",
+    "artist": "Bone Thugs-N-Harmony",
+    "genre": "Hip Hop",
+    "url": "https://www.ticketmaster.com/event/3A0062C64E1F6C2E"
+  },
+  {
+    "id": "3A0062F89D842B4A",
+    "name": "Junior H - $AD BOYZ LIVE & BROKEN TOUR",
+    "date": "2025-10-04T20:00:00",
+    "artist": "Junior H",
+    "genre": "Regional Mexican",
+    "url": "https://www.ticketmaster.com/event/3A0062F89D842B4A"
+  },
+  {
+    "id": "3A00624AD74F46E7",
+    "name": "The Lumineers: The Automatic World Tour",
+    "date": "2025-10-10T19:30:00",
+    "artist": "The Lumineers",
+    "genre": "Folk",
+    "url": "https://www.ticketmaster.com/event/3A00624AD74F46E7"
+  },
+  {
+    "id": "3A006184AE133C25",
+    "name": "Keith Urban: High and Alive World Tour",
+    "date": "2025-10-11T19:00:00",
+    "artist": "Keith Urban",
+    "genre": "Country",
+    "url": "https://www.ticketmaster.com/event/3A006184AE133C25"
+  },
+  {
+    "id": "3A0062B7E35C5C77",
+    "name": "Majic Under The Stars",
+    "date": "2025-10-25T18:00:00",
+    "artist": "Various Artists",
+    "genre": "R&B",
+    "url": "https://www.ticketmaster.com/event/3A0062B7E35C5C77"
+  },
+  {
+    "id": "3A00628AE4804057",
+    "name": "Alice Cooper & Judas Priest Live",
+    "date": "2025-10-26T18:45:00",
+    "artist": "Alice Cooper",
+    "genre": "Rock",
+    "url": "https://www.ticketmaster.com/event/3A00628AE4804057"
+  }
+]
